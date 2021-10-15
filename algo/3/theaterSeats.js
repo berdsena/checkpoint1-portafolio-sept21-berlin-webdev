@@ -22,6 +22,15 @@ exemple :
 
 function theaterSeats() {
   // TODO
+  let finalArray = []
+  for (let i = 1; i < 27; i++) {
+    let rowArray =[];
+    for (let k = 1; k < 101; k++) {
+      rowArray.push(`${i}-${k}`);
+    }
+    finalArray.push(rowArray);
+  }
+  return finalArray
 }
 
 module.exports = theaterSeats;

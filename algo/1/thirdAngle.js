@@ -16,6 +16,7 @@ thirdAngle(20, 80) doit renvoyer 80
 
 function thirdAngle(a, b) {
   // TODO
+  return 180-a-b
 }
 
 module.exports = thirdAngle;

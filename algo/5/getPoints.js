@@ -41,6 +41,20 @@ const scores = [
 
 function getPoints(array) {
   // TODO
+// Victory: +3 points
+// Draw: +1 points
+// Defeat: +0 point
+
+let count = 0;
+array.forEach(result => {
+  numberArray = result.split(":");
+  if (numberArray[0] > numberArray[1]) {
+    count += 3;
+  } else if (numberArray[0] === numberArray[1]) {
+    count += 1
+  }
+})
+return count;
 }
 
 module.exports = getPoints;
