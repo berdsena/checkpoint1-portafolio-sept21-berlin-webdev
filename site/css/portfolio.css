@@ -144,4 +144,12 @@ header {
  .column{
    width: 100%;
  }
+ .projects {
+   display: flex;
+   flex-direction: row;
+ }
+}
+
+.inprogress {
+  opacity: 0.6;
 }
