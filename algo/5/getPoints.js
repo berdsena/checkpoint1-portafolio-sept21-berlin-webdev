@@ -40,7 +40,22 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // TODO
+  let ourCount = 0;
+  for (let i = 0; i < array.length; i++) {
+    if(Number(array[i][0]) > Number(array[i][2])) {
+      ourCount += 3;
+    }
+    else if(Number(array[i][0]) === Number(array[i][2])) {
+      ourCount += 1;
+    }
+    else {
+      ourCount += 0;
+    }
+  }
+  return ourCount;
 }
 
 module.exports = getPoints;
+
+
+getPoints(scores);

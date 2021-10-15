@@ -20,8 +20,23 @@ exemple :
 ] 
 */
 
+function range(start, end) {
+    return (new Array(end - start + 1)).fill(undefined).map((_, i) => i + start);
+}
+
 function theaterSeats() {
-  // TODO
+    const columns = range(1, 26);
+    const rows = range(1, 100);
+    let seats = [];
+
+    for(let i = 0; i < columns.length; i++){
+        let currentRow = [];
+        for(let j = 0; j < rows.length; j++){
+            currentRow.push(`${columns[i]} - ${rows[j]}`);
+        }
+        seats.push(currentRow);
+    }
+    return  seats;
 }
 
 module.exports = theaterSeats;

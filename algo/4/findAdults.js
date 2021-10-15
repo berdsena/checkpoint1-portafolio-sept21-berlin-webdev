@@ -34,7 +34,18 @@ const persons = [
 ];
 
 function findAdults(arr) {
-  // TODO
+  const men = [];
+  const women = [];
+  persons.filter(person => person.age >= 18).map(person => {
+    if(person.sex === 'female'){
+      women.push(person);
+    }
+    else {
+      men.push(person);
+    }
+  });
+  return [women].concat([men]);
 }
 
 module.exports = findAdults;
+

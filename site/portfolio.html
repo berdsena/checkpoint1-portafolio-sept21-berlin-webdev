@@ -24,7 +24,17 @@
     <main class="container">
       <!-- TODO: First banner with title, descriptiona and avatar-->
       <!-- You can use the avatar image on the image folder -->
-
+      <div class="first-banner">
+        <div class="dev-title">
+          <h2>FullStack Developer</h2>
+        </div>
+        <div class="dev-description">
+          <h5>I code beautifully simple things, and I love what I do.</h5>
+        </div>
+        <div class="dev-avatar">
+          <img src="./image/avatar.png" alt="dev-photo" class="dev-avatar-img" />
+        </div>
+      </div>
       <!-- desktop image -->
       <section class="introduction">
         <figure class="desktop">
@@ -44,11 +54,14 @@
             naturally curious, and perpetually working on improving my chops one
             problem at a time.
           </p>
+          <div class="modify pink-bg">
+            <p>Modify text and color</p>
+          </div>
         </div>
 
         <!-- Bloc of list of skill front end and back end -->
         <div class="skills">
-          <div class="column">
+          <div class="column back-skill">
             <div class="skill">
               <img src="image/frontend.svg" alt="frontend" />
               <h2>Back-end Developer</h2>
@@ -59,9 +72,14 @@
               <ul id="dev-tools-back-list">
                 <li>VScode</li>
               </ul>
+              <form id="form">
+                <label for="addskill"></label>
+                <input type="text" name="skills" placeholder="Add Skill" id="addskill" value=""/>
+                <input type="submit" value="Add" />
+              </form>
             </div>
           </div>
-          <div class="column">
+          <div class="column front-skill">
             <div class="skill">
               <img src="image/frontend.svg" alt="frontend" />
               <h2>Front-end Developer</h2>
@@ -74,6 +92,9 @@
                 <li>You can modify</li>
                 <li>You can modify</li>
               </ul>
+              <div class="modify pink-bg modify-skills">
+                <p>Modify</p>
+              </div>
             </div>
           </div>
         </div>
