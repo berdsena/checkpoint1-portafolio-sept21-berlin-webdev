@@ -49,3 +49,5 @@ function findAdults(arr) {
 
 module.exports = findAdults;
 
+console.log(findAdults(persons))
+

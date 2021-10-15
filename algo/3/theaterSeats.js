@@ -32,7 +32,7 @@ function theaterSeats() {
     for(let i = 0; i < columns.length; i++){
         let currentRow = [];
         for(let j = 0; j < rows.length; j++){
-            currentRow.push(`${columns[i]} - ${rows[j]}`);
+            currentRow.push(`${columns[i]}-${rows[j]}`);
         }
         seats.push(currentRow);
     }
@@ -40,3 +40,6 @@ function theaterSeats() {
 }
 
 module.exports = theaterSeats;
+
+
+console.log(theaterSeats()[25][10])
