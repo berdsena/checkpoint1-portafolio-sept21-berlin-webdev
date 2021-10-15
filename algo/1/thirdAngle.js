@@ -16,6 +16,13 @@ thirdAngle(20, 80) doit renvoyer 80
 
 function thirdAngle(a, b) {
   // TODO
+
+  if ( a + b >= 180 )
+  return 0.0;  // That's not a triangle! OwO
+
+return ( 180 - a - b );
+  
 }
+ 
 
 module.exports = thirdAngle;
