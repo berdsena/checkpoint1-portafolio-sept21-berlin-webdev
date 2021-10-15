@@ -131,3 +131,12 @@ header {
     display: none;
   }
 }
+
+@media only screen and (min-width: 700px) {
+ .skills {
+   display: flex;
+ }
+ .column{
+   width: 100%;
+ }
+}
