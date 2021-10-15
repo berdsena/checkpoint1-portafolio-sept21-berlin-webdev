@@ -111,3 +111,45 @@ button {
 }
 
 /* CODE HERE */
+
+.navbar {
+  justify-content: space-between;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction {
+  display: none;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .introduction {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
