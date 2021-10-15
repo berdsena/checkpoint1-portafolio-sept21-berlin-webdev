@@ -37,7 +37,9 @@ function findAdults(arr) {
  //persons.map(function(person){
  let male = persons.filter((person) => (person.age > 18 || person.sex === "male"))
  let female = persons.filter((person)=>(person.age > 18 || person.sex === "female"))
- return [[male],[female]]
+ let result = []
+ result.push(male,female)
+ return result
 }
 
 
