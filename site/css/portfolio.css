@@ -111,3 +111,81 @@ button {
 }
 
 /* CODE HERE */
+/* NAVBAR  */
+.logo-container{
+  display: flex;
+  justify-content: left;
+}
+
+.nav-container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu{
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+   
+}
+
+.menu > a{
+  color: #750ff7;
+}
+
+/* BANNER */
+.banner{
+  height: 3vh;
+  margin-bottom: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.main{
+  width: 100vw;
+}
+.skills{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.column{
+  width: 100%;
+}
+
+.disabled{
+  opacity: 0.3;
+}
+
+.projects{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 700px) {
+  .desktop{
+    display: none;
+  }
+.banner{
+  margin-bottom: 65vh;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 80vw;
+  
+}
+}
