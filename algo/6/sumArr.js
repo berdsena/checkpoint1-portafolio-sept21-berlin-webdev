@@ -23,7 +23,16 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 */
 
 function sumArr(arrayA, arrayB) {
-  // TODO
+  let sumArr =[];
+  let maxLength = arrayA.length;
+  if (arrayB.length > arrayA.length){
+    maxLength = arrayB.length;}
+  for(let i=0;i<maxLength;i++){
+    if(isNaN(+arrayA[i])){arrayA[i]=0;};
+    if(isNaN(+arrayB[i])){arrayB[i]=0;};
+    sumArr.push(`${(+arrayA[i])+(+arrayB[i])}`);
+  }
+  return sumArr;
 }
 
 module.exports = sumArr;
