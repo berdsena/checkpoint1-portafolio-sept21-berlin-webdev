@@ -130,11 +130,16 @@ header {
   #bigimg {
     display: none;
   }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (min-width: 700px) {
  .skills {
    display: flex;
+   flex-direction: row-reverse;
  }
  .column{
    width: 100%;
