@@ -40,7 +40,13 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // TODO
+  let points = 0;
+  array.forEach(element => {
+    let match = element.split(':');
+    if (match[0]>match[1]){points += 3}
+    else if (match[0]==match[1]){points += 1}
+  });
+  return points;
 }
-
+console.log(getPoints(scores));
 module.exports = getPoints;
