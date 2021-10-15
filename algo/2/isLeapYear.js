@@ -19,6 +19,13 @@ Autre rappel: Tu dois utiliser l'opérateur modulo (%) pour vérifier si un nomb
 */
 
 function isLeapYear(year) {
+  const result;
+  if (year%4 == 0){
+    result = true}
+  else{ 
+    result = false;
+  }
+
   // TODO
 }
 
