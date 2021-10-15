@@ -111,3 +111,75 @@ button {
 }
 
 /* CODE HERE */
+
+/*///////////////////////NAV BAR//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.desktop{
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+@media screen and (max-width: 700px) {
+ .desktop{
+   display:none;
+ }
+}
+
+.avatar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 400px;
+}
+
+/*///////////////////////MAIN - SKILLS SECTION//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.skills{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.column{
+ flex-grow: 4;
+}
+
+@media screen and (max-width: 700px) {
+  .skills{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+ }
+
+ /*///////////////////////MAIN - BONUS//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+ .disabled{
+   opacity: 0.4;
+ }
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+#modify-text-color-button{
+  background-color: rgb(226, 194, 194);
+  border-radius: 15px;
+  border: 1px solid black;
+  color: black;
+}

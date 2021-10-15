@@ -14,11 +14,13 @@
   <body>
     <header>
       <nav class="navbar">
-        <img src="image/logo.svg" class="logo" alt="my-logo" />
-        <div class="menu">
-          <a href="home.html">Instructions</a>
-          <a href="portfolio.html">Portfolio</a>
+        <div class="navbar-left">
+          <img src="image/logo.svg" class="logo" alt="my-logo" />
         </div>
+            <div class="menu">
+              <a href="home.html">Instructions</a>
+              <a href="portfolio.html">Portfolio</a>
+            </div>
       </nav>
     </header>
     <main class="container">
@@ -27,8 +29,15 @@
 
       <!-- desktop image -->
       <section class="introduction">
+        <div class="intro-avatar">
+          <h1>FullStack Developer</h1>
+          <p>I code beautifully simple things, I love what I do.
+          <div class="avatar">
+            <img src="./image/avatar.png" alt="avatar" class="img-avatar">
+          </div>
+        </div>
         <figure class="desktop">
-          <img src="image/desktop.svg" alt="desktop" />
+          <img src="image/desktop.svg" alt="desktop" id="avatar-img" />
         </figure>
       </section>
 
@@ -44,6 +53,7 @@
             naturally curious, and perpetually working on improving my chops one
             problem at a time.
           </p>
+          <button id="modify-text-color-button">Modify text and color</button>
         </div>
 
         <!-- Bloc of list of skill front end and back end -->
