@@ -111,3 +111,34 @@ button {
 }
 
 /* CODE HERE */
+.navbar {
+  justify-content: space-between;
+}
+.title, .introduction{
+  text-align: center;
+}
+.skills{
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: center;
+}
+.disabled{
+  opacity: 0.4;
+}
+.projects{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+@media only screen and (max-width:700px) {
+  .introduction img {
+    display: none;
+  }
+  .skills{
+    flex-flow: column-reverse nowrap;
+  }
+  .projects{
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
