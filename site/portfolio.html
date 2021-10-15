@@ -16,8 +16,8 @@
       <nav class="navbar">
         <img src="image/logo.svg" class="logo" alt="my-logo" />
         <div class="menu">
-          <a href="home.html" class="purple-text">Instructions</a>
-          <a href="portfolio.html" class="purple-text">Portfolio</a>
+          <a href="home.html">Instructions</a>
+          <a href="portfolio.html">Portfolio</a>
         </div>
       </nav>
     </header>
@@ -27,7 +27,15 @@
       <div class="banner">
         <h1>FullStack Developer</h1>
         <p>I love to code and to create beautiful applications</p>
-        <img src="./image/avatar-bis.svg" alt="" />
+        <div id="avatar-container">
+          <img id="avatar1" src="./image/avatar-bis.svg" alt="" />
+          <img
+            id="avatar2"
+            class="display-none"
+            src="./image/avatar.png"
+            alt=""
+          />
+        </div>
       </div>
 
       <!-- desktop image -->
@@ -39,7 +47,7 @@
 
       <!-- Second banner with description of your name and your presentation -->
       <section class="presentation">
-        <div class="description pink-bg">
+        <div id="description" class="description pink-bg">
           <h2>Hi, I’m <span id="name">Matt</span>. Nice to meet you.</h2>
           <p>
             Since the beginning of my journey as a freelance developer nearly 10
@@ -49,6 +57,7 @@
             naturally curious, and perpetually working on improving my chops one
             problem at a time.
           </p>
+          <button id="btnName">Customize name and color</button>
         </div>
 
         <!-- Bloc of list of skill front end and back end -->
@@ -62,10 +71,11 @@
               <p>HTML, CSS</p>
               <h2 class="pink-text">Dev Tools:</h2>
               <ul id="front-dev-tools">
-                <li>You can modify</li>
-                <li>You can modify</li>
-                <li>You can modify</li>
+                <li class="front-dev-tools-li">You can modify</li>
+                <li class="front-dev-tools-li">You can modify</li>
+                <li class="front-dev-tools-li">You can modify</li>
               </ul>
+              <button id="btnModify">Modify</button>
             </div>
           </div>
           <div class="column">
@@ -79,6 +89,8 @@
               <ul id="dev-tools-back-list">
                 <li>VScode</li>
               </ul>
+              <input id="inputAdd" type="text" placeholder="Add a new Tool" />
+              <button id="btnAdd">Add</button>
             </div>
           </div>
         </div>
