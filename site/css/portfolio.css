@@ -111,3 +111,39 @@ button {
 }
 
 /* CODE HERE */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.container{
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+      display: none !important;
+  }
+}
+
+.column {
+  display: table;
+  flex-direction: row;
+  display: block;
+  flex-wrap: nowrap;
+  flex: 1;
+}
+.skills{
+  display: table-row;
+}
+
+@media screen and (max-width: 1024px) {
+  .column {
+      display: none !important;
+  }
+}
