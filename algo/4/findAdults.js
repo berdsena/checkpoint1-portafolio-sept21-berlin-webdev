@@ -34,20 +34,10 @@ const persons = [
 ];
 
 function findAdults(arr) {
-  const men = [];
-  const women = [];
-  persons.filter(person => person.age >= 18).map(person => {
-    if(person.sex === 'female'){
-      women.push(person);
-    }
-    else {
-      men.push(person);
-    }
-  });
-  return [women].concat([men]);
+  const men = persons.filter(person => ((person.age >= 18) && (person.sex === 'male')));
+  const women = persons.filter(person => ((person.age >= 18) && (person.sex === 'female')));
+  return [women, men];
 }
 
 module.exports = findAdults;
-
-console.log(findAdults(persons))
 
