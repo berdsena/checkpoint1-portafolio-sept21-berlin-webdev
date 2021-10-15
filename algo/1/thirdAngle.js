@@ -15,9 +15,8 @@ thirdAngle(20, 80) doit renvoyer 80
 */
 
 function thirdAngle(a, b) {
-  // TODO
   let c = 180 - (a + b);
-  console.log(c)
+  return c;
 }
 
 thirdAngle(90, 30);
